@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TRONITE STUDIO</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0f;
+    color: white;
+}
+
+/* HEADER */
+header {
+    height: 70px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #111116;
+    border-bottom: 1px solid #292932;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* HERO */
+.hero {
+    padding: 55px 20px 35px;
+    background: linear-gradient(180deg, #17131f, #0b0b0f);
+}
+
+.hero small {
+    color: #a78bfa;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.hero p {
+    color: #aaa;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 12px 20px;
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* SEARCH */
+.search-area {
+    padding: 25px 20px;
+}
+
+.search {
+    width: 100%;
+    padding: 15px;
+    background: #17171d;
+    border: 1px solid #30303a;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+/* FILTERS */
+.filters {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 0 20px 25px;
+}
+
+.filter {
+    background: #17171d;
+    border: 1px solid #30303a;
+    color: #bbb;
+    padding: 10px 15px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+/* SECTION */
+.section {
+    padding: 10px 20px 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: #15151b;
+    border: 1px solid #292932;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #7c3aed;
+}
+
+.poster {
+    height: 250px;
+    background: linear-gradient(145deg, #24133c, #111118);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.poster h2 {
+    font-size: 20px;
+}
+
+.info {
+    padding: 13px;
+}
+
+.info h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.rating {
+    color: #facc15;
+    font-size: 14px;
+}
+
+.meta {
+    color: #999;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    border-top: 1px solid #292932;
+    color: #777;
+    font-size: 13px;
+}
+
+/* MOBILE */
+@media (min-width: 700px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero {
+        padding: 80px 8%;
+    }
+
+    .search-area,
+    .filters,
+    .section {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">TRONITE STUDIO</div>
+
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">ANIME</a>
+        <a href="#">ABOUT</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <small>TRONITE ORIGINAL</small>
+
+    <h1>PHANTOM CONTRACT</h1>
+
+    <p>
+        Every power has a price.
+        Explore the world, characters and information
+        behind the upcoming TRONITE STUDIO anime.
+    </p>
+
+    <a href="#" class="button">EXPLORE ANIME</a>
+</section>
+
+<div class="search-area">
+    <input
+        class="search"
+        type="text"
+        placeholder="🔍 Search anime by name..."
+    >
+</div>
+
+<div class="filters">
+    <div class="filter">⭐ Rating</div>
+    <div class="filter">📅 Year</div>
+    <div class="filter">🎭 Genre</div>
+    <div class="filter">🎬 Type</div>
+    <div class="filter">📌 Status</div>
+</div>
+
+<section class="section">
+
+    <h2 class="section-title">Popular Anime</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="poster">
+                <h2>PHANTOM<br>CONTRACT</h2>
+            </div>
+
+            <div class="info">
+                <h3>Phantom Contract</h3>
+                <div class="rating">⭐ 9.2/10</div>
+                <div class="meta">2027 • Web Series</div>
+                <div class="meta">Dark Fantasy • Action</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="poster">
+                <h2>ANIME<br>PROJECT 02</h2>
+            </div>
+
+            <div class="info">
+                <h3>Coming Soon</h3>
+                <div class="rating">⭐ —</div>
+                <div class="meta">2028 • Web Series</div>
+                <div class="meta">Mystery • Action</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="poster">
+                <h2>TRONITE<br>PROJECT 03</h2>
+            </div>
+
+            <div class="info">
+                <h3>Coming Soon</h3>
+                <div class="rating">⭐ —</div>
+                <div class="meta">TBA • Anime</div>
+                <div class="meta">Fantasy</div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 TRONITE STUDIO<br>
+    Stories Beyond Reality.
+</footer>
+
+</body>
+</html>
